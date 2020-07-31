@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact</title>
+    <link rel="shortcut icon" href="../img/nilesh.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>    
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <a class="navbar-brand" href="#">
+                        <img src="../img/nilesh.jpg" alt="Logo"
+                            style="width: 40px;border-radius: 20px;margin-top: -10px;">
+                    </a>
+                    <li class="active"><a href="../portfolio.html">Home</a></li>
+                    <li><a href="../pages/About.html">About</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                      <form class="form-inline" action="/action_page.php">
+                        <div class="w3-container">
+          
+                          <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-red" style="border-radius: 6px; height:35px;"  >Login</button>
+                        
+                          <div id="id01" class="w3-modal">
+                            <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+                          
+                              <div class="w3-center"><br>
+                                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
+                                <img src="./img/nilesh.jpg" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+                              </div>
+                        
+                              <form class="w3-container" action="/action_page.php">
+                                <div class="w3-section">
+                                  <label><b>Username</b></label>
+                                  <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+                                  <label><b>Password</b></label>
+                                  <input class="w3-input w3-border" type="text" placeholder="Enter Password" name="psw" required>
+                                  <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
+                                  <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+                                </div>
+                              </form>
+                        
+                              <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                                <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+                                <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+                              </div>
+                        
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </form>
+                    </nav>
+                  </ul>
+                 
+                <ul class="nav navbar-nav navbar-right">
+                    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                        <form class="form-inline" action="/action_page.php">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                            <button class="btn btn-success" type="submit" style="margin-top: 2px;">Search</button>
+                        </form>
+                    </nav>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <form action="/action_page.php" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin">
+        <h2 class="w3-center">Contact Us</h2>
+         
+        <div class="w3-row w3-section">
+          <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+            <div class="w3-rest">
+              <input class="w3-input w3-border" name="first" type="text" placeholder="First Name">
+            </div>
+        </div>
+        
+        <div class="w3-row w3-section">
+          <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+            <div class="w3-rest">
+              <input class="w3-input w3-border" name="last" type="text" placeholder="Last Name">
+            </div>
+        </div>
+        
+        <div class="w3-row w3-section">
+          <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
+            <div class="w3-rest">
+              <input class="w3-input w3-border" name="email" type="text" placeholder="Email">
+            </div>
+        </div>
+        
+        <div class="w3-row w3-section">
+          <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+            <div class="w3-rest">
+              <input class="w3-input w3-border" name="phone" type="text" placeholder="Phone">
+            </div>
+        </div>
+        
+        <div class="w3-row w3-section">
+          <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
+            <div class="w3-rest">
+              <input class="w3-input w3-border" name="message" type="text" placeholder="Message">
+            </div>
+        </div>
+        
+        <p class="w3-center">
+        <button class="w3-button w3-section w3-blue w3-ripple"> Send </button>
+        </p>
+        </form>
+
+    <p style="text-align: center;"><iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30129.085127713628!2d73.07594429999999!3d19.2764667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1594880535249!5m2!1sen!2sin"
+            width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe></p>
+
+    <footer class="container-fluid text-center" style="background-color: black;">
+        <p style="color: white;">&copy;2020-2021 NileshAawale.com</p>
+        <a href="#">
+            <p style="color: white;">Back To Top | Privarcy | Term</p>
+        </a>
+    </footer>
+
+</body>
+
+</html>

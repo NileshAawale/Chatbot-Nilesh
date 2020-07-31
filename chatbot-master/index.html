@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - React Realtime node socket</title>
+    <script defer src="http://localhost:7000/socket.io/socket.io.js"></script>
+    <script defer src='js/client.js'></script>
+    <link rel='stylesheet' href="css/style.css">
+</head>
+
+<body>
+        <nav>
+            <img class="logo" src='chat.png' alt="" />
+            <h1>Welcome to chatbot appliaction</h1>
+        </nav>
+        <div class="container">
+            <div class="message right">sender: Hii</div>
+            <div class="message left">cloud counselage: welcome to cloud counselage,introduced yourself</div>
+            <div class="message right">sender: Nilesh Aawale</div>
+            <div class="message left">cloud counselage:Hello Nilesh,how may i help you please select the following options <select name="select name">
+                <option>1.what is Ip?</option>
+                <option>2.How is Ip?</option>
+                <option>3.Bitrix 24 issues</option>
+                <option>4.Ip Traning Issuses</option>
+                <option>5.Jobs Available</option>
+            </select>
+        </div>
+        <div class="message right">sender: 1</div>
+        <div class="message left" style="width: 300px;">cloud counselage:<a href="https://www.youtube.com/">https://www.youtube.com/watch?v=Hs9npUUIg4I&feature=emb_logo</a></div>
+        </div>
+        <div class="send">
+            <form action="#" id="send-container">
+                <input type="text" name="message" id="messageInp" placeholder="Type a Message..">
+                <button class="btn" type="submit">Send</button>
+            </form>
+        </div>
+</body>
+
+</html>

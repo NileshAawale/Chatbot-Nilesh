@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nilesh Awale</title>
+  <link rel="shortcut icon" href="./img/nilesh.jpg" style="border-radius: 25px;">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    footer {
+      background-color: black;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <a class="navbar-brand" href="#">
+            <img src="./img/nilesh.jpg" alt="Logo" style="width: 40px;border-radius: 40px;margin-top: -10px;height: 40px;">
+          </a>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="./pages/About.html">About</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="./pages/contact.html">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <form class="form-inline" action="/action_page.php">
+              <div class="w3-container">
+
+                <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-red" style="border-radius: 6px; height:35px;"  >Login</button>
+              
+                <div id="id01" class="w3-modal">
+                  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+                
+                    <div class="w3-center"><br>
+                      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
+                      <img src="./img/nilesh.jpg" alt="Avatar" style="width:30%",border-radius='60px',height='30px' class="w3-circle w3-margin-top">
+                    </div>
+              
+                    <form class="w3-container" action="/action_page.php">
+                      <div class="w3-section">
+                        <label><b>Username</b></label>
+                        <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+                        <label><b>Password</b></label>
+                        <input class="w3-input w3-border" type="text" placeholder="Enter Password" name="psw" required>
+                        <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
+                        <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+                      </div>
+                    </form>
+              
+                    <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                      <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+                      <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+              
+            </form>
+          </nav>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <form class="form-inline" action="/action_page.php">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search">
+              <button class="btn btn-success" type="submit">Search</button>&nbsp;&nbsp;
+            </form>
+          </nav>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+    <div class="container text-center">
+      <a href="./portfolio.html"> <img src="./img/nilesh.jpg" alt="Logo" style="width: 120px;border-radius: 300px;"></a>
+      <h2>Nilesh Aawle</h2>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-3 text-center">
+    <h3>My Skills</h3><br>
+    <a href="../index.html"><img src="../live.jpg" alt="chat" style="width: 100px; margin-left: 1250px; "></a>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card" style="width:400px;border: 1px solid gray; padding: 5px 0px;">
+          <img class="card-img-top" src="./img/javascript.png" alt="Card image" width="200px">
+          <div class="card-body">
+            <h4 class="card-title">Python</h4>
+            <p class="card-text">some</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card" style="width:400px;border: 1px solid gray; padding: 5px 0px;">
+          <img class="card-img-top" src="./img/python.png" alt="Card image" width="200px">
+          <div class="card-body">
+            <h4 class="card-title">Python</h4>
+            <p class="card-text">some</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card" style="width:400px;border: 1px solid gray; padding: 5px 0px;">
+          <img class="card-img-top" src="./img/javascript.png" alt="Card image" width="200px">
+          <div class="card-body">
+            <h4 class="card-title">JavaScript</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><br>
+
+
+  </div>
+
+  <footer class="container-fluid text-center">
+    <p style="color: white;">&copy;2020-2021 NileshAawale.com</p>
+    <a href="./portfolio.html">
+      <p style="color: white;">Back To Top | Privarcy | Term</p>
+    </a>
+  </footer>
+
+</body>
+
+</html>
